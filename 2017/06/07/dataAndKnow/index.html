@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>前端一些知识的学习网站以及一些素材资料 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="github上值得关注的前端项目,这是trigkit4对于在git上对于前端只是学习的一个整理,个人觉得有一定的参考价值:地址:http://hawx1993.github.io/archives/ 以下地址是前端开发人员必须了解的七大技能图谱,里面包含HTML5,CSS3,Javascript,jQuery,Node.js,AngularJS,ReactJS,当你要学习其中某一个技术时,可以参考">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端一些知识的学习网站以及一些素材资料">
+<meta property="og:url" content="http://yoursite.com/2017/06/07/dataAndKnow/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="github上值得关注的前端项目,这是trigkit4对于在git上对于前端只是学习的一个整理,个人觉得有一定的参考价值:地址:http://hawx1993.github.io/archives/ 以下地址是前端开发人员必须了解的七大技能图谱,里面包含HTML5,CSS3,Javascript,jQuery,Node.js,AngularJS,ReactJS,当你要学习其中某一个技术时,可以参考">
+<meta property="og:updated_time" content="2017-06-07T10:03:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="前端一些知识的学习网站以及一些素材资料">
+<meta name="twitter:description" content="github上值得关注的前端项目,这是trigkit4对于在git上对于前端只是学习的一个整理,个人觉得有一定的参考价值:地址:http://hawx1993.github.io/archives/ 以下地址是前端开发人员必须了解的七大技能图谱,里面包含HTML5,CSS3,Javascript,jQuery,Node.js,AngularJS,ReactJS,当你要学习其中某一个技术时,可以参考">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -129,16 +134,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-dataAndKnow" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-dataAndKnow" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/07/dataAndKnow/">前端一些知识的学习网站以及一些素材资料</a>
+    <h1 class="article-title" itemprop="name">
+      前端一些知识的学习网站以及一些素材资料
     </h1>
   
 
@@ -169,62 +172,26 @@
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/07/dataAndKnow/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-Permission-denied" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/24/Permission-denied/">Permission denied(publickey)</a>
-    </h1>
-  
-
-        
-        <a href="/2017/04/24/Permission-denied/" class="archive-article-date">
-  	<time datetime="2017-04-24T09:23:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>不知道什么原因,有一次,我本地的公司项目无法pull,也无法push项目了,<img src="http://i4.buimg.com/567571/44198f9ebab475a8.png" alt=""><br>但是ssh连接主机又是成功的。<br><img src="http://i1.piimg.com/567571/e34d5692f17ed2e0.png" alt=""><br>后来知道是ssh的问题。但是重新配置了ssh key,并且更改了github上面ssh key还是不行,搞了很久,最后在一同事的提醒下,在公司git的项目里把里面的ssh key也更改了就ok了。下面是整个正确的操作流程。</p>
-<h2 id="检查是否已经有SSH-Key"><a href="#检查是否已经有SSH-Key" class="headerlink" title="检查是否已经有SSH Key"></a>检查是否已经有SSH Key</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~/.ssh</div></pre></td></tr></table></figure>
-<p>如果说没有这个目录，就直接生成一个新的SSH</p>
-<h2 id="备份删除"><a href="#备份删除" class="headerlink" title="备份删除"></a>备份删除</h2><p>如果上一步得出有.ssh文件,则备份删除这个文件</p>
-<h2 id="生成一个新的SSH"><a href="#生成一个新的SSH" class="headerlink" title="生成一个新的SSH"></a>生成一个新的SSH</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C <span class="string">"you email"</span></div></pre></td></tr></table></figure>
-<p>之后直接三次回车，不用填写东西。然后就生成一个目录.ssh ，里面有两个文件：id_rsa , id_rsa.pub</p>
-<h2 id="复制生成的公钥-将其放到你的github上"><a href="#复制生成的公钥-将其放到你的github上" class="headerlink" title="复制生成的公钥,将其放到你的github上"></a>复制生成的公钥,将其放到你的github上</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vim ~/.ssh/id_rsa.pub</div></pre></td></tr></table></figure>
-<p>这个命令可以直接查看id_rsa.pub的内容,之后手动复制全部内容,或者直接在电脑上找到.ssh文件夹,然后复制里面id_rsa.pub的内容</p>
-<h2 id="在github上新建ssh-key"><a href="#在github上新建ssh-key" class="headerlink" title="在github上新建ssh key"></a>在github上新建ssh key</h2><p>打开你的github,点击右上角的头像,然后选择下面的”settings”<br>选择出现的”SSH and GPG keys”,之后”New SSH key”,”title”可以随便填,然后将上一步中复制的内容粘贴到”key”的输入框里面。完成之后点击”Add SSH key”</p>
-<h2 id="在公司或你所要进行的项目所在的git上面也按上一步的操作-重新设置ssh-key"><a href="#在公司或你所要进行的项目所在的git上面也按上一步的操作-重新设置ssh-key" class="headerlink" title="在公司或你所要进行的项目所在的git上面也按上一步的操作,重新设置ssh key"></a>在公司或你所要进行的项目所在的git上面也按上一步的操作,重新设置ssh key</h2><p>上面的内容,在网上都有相应的文章进行阐述,并不难完成,而这最后一步却很重要,很容易被忽略,我一开始就是忽略了这一步才导致一直都不成功,也找不出原因。做完上述的操作,记得在公司或你所要进行的项目所在的git上面按照上一步的操作,也进行重新配置ssh key</p>
-
-      
-
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -233,22 +200,89 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/24/Permission-denied/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/06/07/dataAndKnow/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
+  
+<nav id="article-nav">
+  
+    <a href="/2017/04/24/Permission-denied/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Permission denied(publickey)
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 
 
 
   
+  
+  
+
+  
+
   
 
 
@@ -271,8 +305,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
